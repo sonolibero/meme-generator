@@ -1,9 +1,5 @@
 import React from "react"
 
-function logUrl() {
-    console.log("url")
-}
-
 export default function Meme() {
     return (
         <main>
@@ -27,4 +23,8 @@ export default function Meme() {
             </form>
         </main>
     )
+}
+
+function logUrl() {
+    console.log("url")
 }
