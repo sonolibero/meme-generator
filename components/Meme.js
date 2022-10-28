@@ -29,10 +29,9 @@ export default function Meme() {
     }
     
     function handleChange(event) {
-        const name = event.target.name
-        const value = event.target.value
-        setMeme(m => ({
-            ...m,
+        const {name, value} = event.target
+        setMeme(prevMeme => ({
+            ...prevMeme,
             [name]:value
         }))
     }
