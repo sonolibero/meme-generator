@@ -1,7 +1,15 @@
+import { url } from "inspector"
 import React from "react"
 import memesData from "./memesData"
 
 export default function Meme() {
+    function getMemeImage() {
+        const memesArray = memesData.data.memes
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        const [url, setUrl] = React.useState(memesArray[randomNumber].url)
+        setUrl(url)
+    }
+
     return (
         <main>
             <div className="form">
@@ -17,15 +25,12 @@ export default function Meme() {
                 />
                 <button 
                     className="form--button"
-                    onClick={logUrl}
+                    onClick={getMemeImage}
                 >
                     Get a new meme image 🖼
                 </button>
+                <img src={url} />
             </div>
         </main>
     )
-}
-
-function logUrl() {
-    console.log(memesData.data.memes[Math.floor(Math.random()*memesData.data.memes.length)].url)
 }
