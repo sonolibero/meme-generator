@@ -14,10 +14,5 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack -w"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ]
+  }
 }
