@@ -1,5 +1,9 @@
 import React from "react"
 
+function logUrl() {
+    console.log("url")
+}
+
 export default function Meme() {
     return (
         <main>
@@ -16,6 +20,7 @@ export default function Meme() {
                 />
                 <button 
                     className="form--button"
+                    onClick={logUrl}
                 >
                     Get a new meme image 🖼
                 </button>
