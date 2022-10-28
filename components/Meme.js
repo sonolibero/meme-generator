@@ -1,5 +1,5 @@
 import React from "react"
-import memesData from "../nemesData.js"
+import memesData from "../memesData.js"
 
 export default function Meme() {
     /**
