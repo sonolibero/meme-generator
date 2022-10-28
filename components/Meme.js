@@ -1,4 +1,5 @@
 import React from "react"
+import memesData from "./memesData"
 
 export default function Meme() {
     return (
@@ -26,5 +27,5 @@ export default function Meme() {
 }
 
 function logUrl() {
-    console.log("url")
+    console.log(memesData.data.memes[Math.floor(Math.random()*memesData.data.memes.length)].url)
 }
