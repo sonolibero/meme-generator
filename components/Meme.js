@@ -24,7 +24,6 @@ export default function Meme() {
             ...prevMeme,
             randomImage: url
         }))
-        
     }
     
     function handleChange(event) {
